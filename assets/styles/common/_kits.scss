@@ -1,0 +1,32 @@
+.kit-form{
+  input{
+    padding: 5px 10px;
+    border:1px solid $colorSecondary;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  label{
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  button[type="submit"],button{
+    padding: 15px 30px;
+    color: white;
+    background-color: $colorAction;
+    border: 1px solid $colorAction;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s ease all;
+
+    &:hover{
+      background-color: white;
+      color: $colorAction;
+    }
+  }
+}

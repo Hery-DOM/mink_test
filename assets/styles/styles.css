@@ -2669,6 +2669,36 @@ main {
   margin: 10px;
 }
 
+.animal-read .pictures-carousel {
+  position: relative;
+}
+.animal-read .pictures-carousel .owl-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+.animal-read .pictures-carousel .owl-nav button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #cfe6ed;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animal-read .pictures-carousel .owl-nav button span {
+  font-size: 50px;
+}
+.animal-read .pictures-carousel .noPictures {
+  height: 50vh;
+  background-color: #cfe6ed;
+}
+
 .admin-aside {
   min-height: 90vh;
 }

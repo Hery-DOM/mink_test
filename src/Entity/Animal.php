@@ -151,6 +151,11 @@ class Animal
         return $this;
     }
 
+    public function priceTTC(): float|int
+    {
+        return $this->price_ht * (1+$this->tva);
+    }
+
 
     public function getBreed(): ?Breed
     {

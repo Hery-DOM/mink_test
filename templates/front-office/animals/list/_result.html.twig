@@ -2,6 +2,13 @@
     {% for a in animals %}
         <article class="item meli-margin-bottom-50 meli-width-20 meli-border-width2 meli-border-colorPrimary meli-padding-20 meli-border-radius10">
             <h2 class="meli-txt-center">{{ a.name }}</h2>
+            <p class="meli-txt-center">
+                {% if a.status == "on_sale" %}
+                    A vendre : {{ a.priceTTC }} €
+                {% else %}
+                    Vendu
+                {% endif %}
+            </p>
             <div class="img-box">
                 {% if a.pictures is not empty %}
                     {% include "partials/_picture.html.twig" with {
@@ -12,7 +19,7 @@
                 {% endif %}
             </div>
             <div class="meli-center-center">
-                <a href="">
+                <a href="{{ path("animal_read",{'slug':a.name|slug}) }}">
                     <button class="kit-btn">Détails</button>
                 </a>
             </div>

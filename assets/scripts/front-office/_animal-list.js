@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded",() => {
+
+    if(!document.querySelector(".selectType")){
+        return null;
+    }
+
     (() => {
         $('.js-select-M').select2();
     })();

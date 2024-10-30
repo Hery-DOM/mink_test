@@ -9,6 +9,7 @@
   align-items: center;
   background-color: rgba(0,0,0,0.8);
   transition: 0.3s ease opacity;
+  z-index: 999;
 
   .content{
     min-width: 30%;

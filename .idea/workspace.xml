@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : Up image treatment + modal flash">
-      <change afterPath="$PROJECT_DIR$/assets/scripts/_editor.js" afterDir="false" />
+    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : Editor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/partials/_modal_flash.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/partials/_modal_flash.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/importmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/importmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/back-office/animal/form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/animal/form.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/back-office/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front-office/animals/read/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front-office/animals/read/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FrontOffice/Animal/ReadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FrontOffice/Animal/ReadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front-office/animals/list/_result.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front-office/animals/list/_result.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partials/_modal_flash.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_modal_flash.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +189,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature__editor",
+    "git-widget-placeholder": "feature__last__corrections",
     "last_opened_file_path": "/Users/hery/Sites/localhost/projets-pro/mink_test/assets/owlcarousel",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -298,6 +295,7 @@
       <workItem from="1730274378740" duration="600000" />
       <workItem from="1730274986178" duration="7436000" />
       <workItem from="1730301013112" duration="718000" />
+      <workItem from="1730309307922" duration="879000" />
     </task>
     <task id="LOCAL-00001" summary="Feature : init back-office + command + User + Auth + login page">
       <option name="closed" value="true" />

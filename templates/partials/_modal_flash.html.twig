@@ -1,0 +1,24 @@
+{% set messageSuccess = app.flashes("success") %}
+{% set messageError = app.flashes("error") %}
+
+
+{% if messageSuccess is not empty or messageError is not empty %}
+    <div class="modal-flash js-flash-modal">
+        <div class="content">
+            <div class="meli-end-center meli-margin-bottom-50">
+            <span class="js-flash-close cross meli-txt-size20">
+                X
+            </span>
+            </div>
+
+            <div class="meli-center-center">
+                {% for message in messageSuccess %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+                {% for message in messageError %}
+                    <p>{{ message }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endif %}

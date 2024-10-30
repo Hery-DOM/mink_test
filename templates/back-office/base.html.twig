@@ -12,6 +12,8 @@
 </head>
 <body>
 
+{% include "partials/_modal_flash.html.twig" %}
+
 <header class="meli-padding-30 meli-bgc-colorSecondary"></header>
 
 <main class="admin-main meli-between-start meli-bgc-colorSecondary">
@@ -33,17 +35,6 @@
     </aside>
     <div class="admin-content meli-width-90  meli-padding-30 meli-bgc-colorWhite">
 
-        {% for message in app.flashes("success") %}
-            <div class="flash meli-padding-30">
-                <p>{{ message }}</p>
-            </div>
-        {% endfor %}
-
-        {% for message in app.flashes("error") %}
-            <div class="flash meli-padding-30">
-                <p>{{ message }}</p>
-            </div>
-        {% endfor %}
         {% block content %}{% endblock %}
     </div>
 

@@ -63,6 +63,14 @@ class FileService extends AbstractController
             try {
                 $move = move_uploaded_file($f["tmp_name"],$destinatonPath."/".$newName);
 
+                $this->resizeAbsolute(
+                    $newName,
+                    $destinatonPath,
+                    $destinatonPath,
+                    1000,
+                    $newName
+                );
+
                 if(!$move){
                     throw new FileException();
                 }
@@ -84,12 +92,14 @@ class FileService extends AbstractController
 
 
             /** Copy original + mini in webp **/
-            foreach(scandir($destinatonPath) as $pic){
-                $this->imgToWebp(
-                    $destinatonPath."/".$pic,
-                    $destinatonPath
-                );
-            }
+            $this->imgToWebp(
+                $destinatonPath."/".$newName,
+                $destinatonPath
+            );
+            $this->imgToWebp(
+                $destinatonPath."/mini-".$newName,
+                $destinatonPath
+            );
 
 
 
@@ -159,10 +169,10 @@ class FileService extends AbstractController
      * @param string $param_original = dir to original directory
      * @param string $param_destination = dir to destination
      * @param int $x = width new img
-     * @param string|null $newName
+     * @param string $newName
      * @return bool|null
      */
-    private function resizeAbsolute(string $name, string $param_original, string $param_destination,int $x, string $newName = null): ?bool
+    private function resizeAbsolute(string $name, string $param_original, string $param_destination,int $x, string $newName): ?bool
     {
 
         // get extension
@@ -200,6 +210,9 @@ class FileService extends AbstractController
                 break;
         }
 
+        unset($new_img);
+        unset($mini_img);
+
         return true;
     }
 
@@ -235,6 +248,8 @@ class FileService extends AbstractController
             $nameOrigin = explode(".",$arr[count($arr)-1])[0];
             imagewebp($new_img,$directoryDestination."/".$nameOrigin.".webp");
         }
+
+        unset($new_img);
 
     }
 

@@ -2799,4 +2799,30 @@ main {
   }
 }
 
+.modal-flash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.3s ease opacity;
+}
+.modal-flash .content {
+  min-width: 30%;
+  background-color: white;
+  padding: 20px 20px 50px;
+  border-radius: 10px;
+}
+.modal-flash .content .cross {
+  transition: 0.3s ease color;
+}
+.modal-flash .content .cross:hover {
+  cursor: pointer;
+  color: #f37619;
+}
+
 /*# sourceMappingURL=styles.css.map */

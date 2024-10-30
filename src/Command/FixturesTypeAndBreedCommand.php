@@ -4,6 +4,7 @@ namespace App\Command;
 
 use App\Entity\Breed;
 use App\Entity\Type;
+use App\Services\FileService;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
@@ -18,7 +19,8 @@ use Symfony\Component\Console\Output\OutputInterface;
 class FixturesTypeAndBreedCommand extends Command
 {
     public function __construct(
-        private readonly EntityManagerInterface $entityManager
+        private readonly EntityManagerInterface $entityManager,
+        private readonly FileService $fileService
     )
     {
         parent::__construct();
@@ -58,9 +60,15 @@ class FixturesTypeAndBreedCommand extends Command
 
             $this->entityManager->persist($t);
         }
-
+        $output->writeln([]);
+        $this->fileService->createDirectory(dirname(__DIR__,2)."/public/uploads");
+        $this->fileService->createDirectory(dirname(__DIR__,2)."/public/uploads/animals");
 
         $this->entityManager->flush();
+
+
+
+
         return Command::SUCCESS;
 
     }

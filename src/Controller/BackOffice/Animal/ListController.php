@@ -12,7 +12,7 @@ use Symfony\Component\Security\Http\Attribute\IsGranted;
 #[IsGranted("ROLE_ADMIN")]
 class ListController extends AbstractController
 {
-    const MAX_RESULT = 3;
+    const MAX_RESULT = 10;
     #[Route("/list", name: "admin_animal_list")]
     public function list(AnimalRepository $animalRepository,SecureInputService $secureInputService)
     {

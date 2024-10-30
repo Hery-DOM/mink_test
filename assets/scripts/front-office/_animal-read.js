@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded",() => {
     (() => {
-      const carousel = $(".owl-carousel");
 
-      if(carousel.length === 0) return null;
+      if(document.querySelectorAll(".owl-carousel").length === 0) return null;
+
+      const carousel = $(".owl-carousel");
 
       carousel.owlCarousel({
           loop: true,

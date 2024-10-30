@@ -17,7 +17,7 @@ class DeleteController extends AbstractController
     public function delete($id,AnimalRepository $animalRepository,EntityManagerInterface $entityManager,FileService $fileService)
     {
         $entityManager->remove($animalRepository->find($id));
-        $fileService->removeFile($this->getParameter("animal_media")."/animals-".$id);
+        $fileService->removeFile($this->getParameter("animal_media")."/animal-".$id);
         $entityManager->flush();
 
         $this->addFlash("success","Animal supprimé");

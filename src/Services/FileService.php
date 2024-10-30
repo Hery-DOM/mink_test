@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\File\Exception\FileException;
 class FileService extends AbstractController
 {
 
-    const CONTSTRAINTS_SIZE = 8;
+    const CONTSTRAINTS_SIZE = 3;
 
     const CONSTRAINTES_TYPE = ["image/jpeg","image/png"];
 
@@ -21,15 +21,20 @@ class FileService extends AbstractController
 
     public function removeFile(string $path)
     {
+
         if(is_dir($path)){
             foreach(scandir($path) as $f){
+                if($f === "." || $f === "..") continue;
                 $this->removeFile($path."/".$f);
             }
+
+            rmdir($path);
         }else{
             if(file_exists($path)){
                 unlink($path);
             }
         }
+
     }
 
 
@@ -90,7 +95,12 @@ class FileService extends AbstractController
 
         }
 
-        return [true,$newNamesPictures];
+        if(!empty($newNamesPictures)){
+            return [true,$newNamesPictures];
+
+        }else{
+            return [false,""];
+        }
 
     }
 
@@ -129,7 +139,7 @@ class FileService extends AbstractController
 
         /** Constraints size **/
         if($size > self::CONTSTRAINTS_SIZE){
-            $this->addFlash("error","L'image est trop grande");
+            $this->addFlash("error","L'image est trop volumineuse");
             return false;
         }
 

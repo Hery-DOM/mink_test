@@ -44,13 +44,13 @@ class PicturesController extends AbstractController
         /** Save pictures **/
         $result = $fileService->saveFile($animal);
 
-        if(!$result[0]){
-            $this->addFlash("error",$result[1]);
+        if($result[0]){
+            /** Add entities Pictures **/
+            $this->createEntitiesPictures($animal,$entityManager,$result[1]);
+            $this->addFlash("success","Les images ont été enregistrées");
         }
 
-        /** Add entities Pictures **/
-        $this->createEntitiesPictures($animal,$entityManager,$result[1]);
-        $this->addFlash("success","Les images ont été enregistrées");
+
 
         return $this->redirectToRoute("admin_animal_pictures_list",[
             "id" => $id

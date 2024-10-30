@@ -54,7 +54,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <form action="{{ path("admin_animal_delete",{"id":a.id}) }}" method="POST" class="admin-form meli-center-center">
+                        <form action="{{ path("admin_animal_delete",{"id":a.id}) }}" method="POST" class="admin-form meli-center-center js-form-confirm">
                             <button class="admin-btn">Supprimer</button>
                             <input type="hidden" name="_csrf_token"
                                    value="{{ csrf_token('delete') }}"

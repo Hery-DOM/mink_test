@@ -139,13 +139,13 @@ class FileService extends AbstractController
 
         /** Constraints size **/
         if($size > self::CONTSTRAINTS_SIZE){
-            $this->addFlash("error","L'image est trop volumineuse");
+            $this->addFlash("error","Des images n'ont pas été enregistrées car trop volumineuses");
             return false;
         }
 
         /** Constraints types **/
         if(!in_array($type,self::CONSTRAINTES_TYPE)){
-            $this->addFlash("error","Le type ne convient pas");
+            $this->addFlash("error","Le type d'un fichier ne convient pas");
             return false;
         }
 

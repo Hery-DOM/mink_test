@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class ListController extends AbstractController
 {
-    const MAX_RESULT = 3;
+    const MAX_RESULT = 10;
 
     #[Route('/animaux', name: "animal_list")]
     public function index(AnimalRepository $animalRepository,SecureInputService $secureInputService, TypeRepository $typeRepository, BreedRepository $breedRepository): Response

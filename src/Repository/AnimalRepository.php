@@ -40,10 +40,19 @@ class AnimalRepository extends ServiceEntityRepository
                $q->andWhere("b.id in (:idBreed)")
                    ->setParameter("idBreed",$filters["breed"]);
            }
+
+
+           if(!empty($filters["sale"])){
+               $q->andWhere("a.status = :status")
+                   ->setParameter("status","on_sale");
+           }
        }
+
 
        if(($sorting === "ASC" || $sorting === "DESC")){
            $q->orderBy("a.name", $sorting);
+       }elseif ($sorting === "priceAsc" || $sorting === "priceDesc"){
+           $q->orderBy("a.price_ht", ($sorting === "priceAsc" ? "ASC" : "DESC"));
        }
 
 
@@ -75,6 +84,11 @@ class AnimalRepository extends ServiceEntityRepository
             if(!empty($filters["breed"])){
                 $q->andWhere("b.id in (:idBreed)")
                     ->setParameter("idBreed",$filters["breed"]);
+            }
+
+            if(!empty($filters["sale"])){
+                $q->andWhere("a.status = :status")
+                    ->setParameter("status","on_sale");
             }
         }
 

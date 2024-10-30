@@ -42,7 +42,7 @@
                             %}
                                 selected
                             {% endif %}
-                    >Alphabétique</option>
+                    >Ordre alphabétique</option>
                     <option value="DESC"
                             {%
                                 if app.request.get("sorting") is defined
@@ -50,8 +50,37 @@
                             %}
                                 selected
                             {% endif %}
-                    >Désalphabétique</option>
+                    >Ordre désalphabétique</option>
+                    <option value="priceAsc"
+                            {%
+                                if app.request.get("sorting") is defined
+                                and app.request.get("sorting") == "priceAsc"
+                            %}
+                                selected
+                            {% endif %}
+                    >Prix croissant</option>
+                    <option value="priceDesc"
+                            {%
+                                if app.request.get("sorting") is defined
+                                and app.request.get("sorting") == "priceDesc"
+                            %}
+                                selected
+                            {% endif %}
+                    >Prix décroissant</option>
                 </select>
+            </div>
+            <div class="meli-start-start  meli-flex-column meli-margin-20 meli-width-100">
+                <label for="sale" class="meli-margin-bottom-10">
+                    <input type="checkbox" name="filters[sale]" id="sale"
+                            {%
+                                if app.request.get("filters")["sale"] is defined
+                                and app.request.get("filters")["sale"]
+                            %}
+                                checked
+                            {% endif %}
+                    >
+                    Afficher uniquement les animaux à vendre
+                </label>
             </div>
             <div class="buttons-box meli-start-center">
                 <div class="meli-margin-20 meli-padding-top-15">

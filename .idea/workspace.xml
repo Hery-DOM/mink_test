@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : Front-office read">
-      <change afterPath="$PROJECT_DIR$/assets/styles/partials/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/partials/_cta_contact.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/front-office/_animal-read.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/front-office/_animal-read.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/front-office/_animal-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/front-office/_animal-list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/AnimalRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/AnimalRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/front-office/animals/list/_filter.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front-office/animals/list/_filter.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front-office/animals/list/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front-office/animals/list/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front-office/animals/read/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front-office/animals/read/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/partials/_pagination.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_pagination.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +185,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature__read",
+    "git-widget-placeholder": "feature__sorting__price",
     "last_opened_file_path": "/Users/hery/Sites/localhost/projets-pro/mink_test/assets/owlcarousel",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

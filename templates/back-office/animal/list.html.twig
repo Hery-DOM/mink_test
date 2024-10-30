@@ -25,18 +25,29 @@
             </tr>
             {% for a in animals %}
                 <tr>
-                    <td rowspan="2">{{ a.name }}</td>
-                    <td rowspan="2">{{ a.age }}</td>
-                    <td rowspan="2">{{ a.breed.type.name~" - "~a.breed.name }}</td>
-                    <td rowspan="2">{{ a.priceHt ? a.priceHT~" €" : "" }}</td>
-                    <td rowspan="2">{{ a.statusLabel }}</td>
-                    <td rowspan="2">{{ a.isPublished ? "Publié" : "Non publié" }}</td>
+                    <td rowspan="3">{{ a.name }}</td>
+                    <td rowspan="3">{{ a.age }}</td>
+                    <td rowspan="3">{{ a.breed.type.name~" - "~a.breed.name }}</td>
+                    <td rowspan="3">{{ a.priceHt ? a.priceHT~" €" : "" }}</td>
+                    <td rowspan="3">{{ a.statusLabel }}</td>
+                    <td rowspan="3">{{ a.isPublished ? "Publié" : "Non publié" }}</td>
                     <td>
                         <div class="meli-center-center">
                             <a href="{{ path('admin_animal_update',{'id':a.id}) }}"
                                 class="admin-btn"
                             >
                                 Modifier
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="meli-center-center">
+                            <a href="{{ path('admin_animal_pictures_list',{'id':a.id}) }}"
+                               class="admin-btn"
+                            >
+                                Gérer les images
                             </a>
                         </div>
                     </td>

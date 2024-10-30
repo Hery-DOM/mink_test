@@ -4,30 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : create Entities">
-      <change afterPath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Command/FixturesTypeAndBreedCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/DeleteController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/FormController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/ListController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/BackOffice/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/FileService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Services/SecureInputService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back-office/animal/form.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back-office/animal/list.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back-office/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back-office/home.html.twig" afterDir="false" />
+    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : CRUD animal">
+      <change afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/PicturesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/back-office/animal/pictures_list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/partials/_picture.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mink_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mink_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/common/_meli.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/common/_meli.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Animal.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Animal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Breed.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Breed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Type.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Type.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/importmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/importmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/DeleteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/DeleteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/FormController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/FormController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/ListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/ListController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BackOffice/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackOffice/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/FileService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/FileService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Services/SecureInputService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/SecureInputService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/back-office/animal/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/animal/list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/back-office/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +34,9 @@
   </component>
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <phar pharPath="$PROJECT_DIR$/composer.phar" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -203,13 +203,14 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature__crud__animals&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature__admin__pictures&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/hery/Sites/localhost/projets-pro/mink_test/public&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Symfony2.SettingsForm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -227,9 +228,59 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.23339.16" />
-        <option value="bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.23339.16" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.23726.107" />
+        <option value="bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.23726.107" />
+        <option value="php-doctrine_collections-970fd879c5a4-a9531fa9" />
+        <option value="php-doctrine_dbal-970fd879c5a4-a6852277" />
+        <option value="php-doctrine_doctrine_bundle-970fd879c5a4-3e2f5254" />
+        <option value="php-doctrine_inflector-970fd879c5a4-c6654e4d" />
+        <option value="php-doctrine_orm-970fd879c5a4-62b92586" />
+        <option value="php-egulias_email_validator-970fd879c5a4-9eb4eccc" />
+        <option value="php-masterminds_html5-970fd879c5a4-c08280de" />
+        <option value="php-monolog_monolog-970fd879c5a4-52a2a8c8" />
+        <option value="php-nikic_php_parser-970fd879c5a4-67c7f528" />
+        <option value="php-phar_io_version-970fd879c5a4-df0e2d90" />
+        <option value="php-phpdocumentor_reflection_docblock-970fd879c5a4-65730a02" />
+        <option value="php-phpunit_php_code_coverage-970fd879c5a4-19659224" />
+        <option value="php-phpunit_phpunit-970fd879c5a4-35b87395" />
+        <option value="php-sebastian_comparator-970fd879c5a4-eb03be14" />
+        <option value="php-symfony_cache-970fd879c5a4-44642cc9" />
+        <option value="php-symfony_config-970fd879c5a4-3d352b2f" />
+        <option value="php-symfony_console-970fd879c5a4-ce05fd45" />
+        <option value="php-symfony_css_selector-970fd879c5a4-22b92dd3" />
+        <option value="php-symfony_dependency_injection-970fd879c5a4-09895027" />
+        <option value="php-symfony_dom_crawler-970fd879c5a4-608e55a8" />
+        <option value="php-symfony_error_handler-970fd879c5a4-c9539298" />
+        <option value="php-symfony_event_dispatcher-970fd879c5a4-1a5b5f9d" />
+        <option value="php-symfony_expression_language-970fd879c5a4-428238f2" />
         <option value="php-symfony_filesystem-970fd879c5a4-f7f4fba0" />
+        <option value="php-symfony_finder-970fd879c5a4-581d5f84" />
+        <option value="php-symfony_flex-970fd879c5a4-82166b49" />
+        <option value="php-symfony_framework_bundle-970fd879c5a4-9eeb8a65" />
+        <option value="php-symfony_http_client-970fd879c5a4-f4d943f6" />
+        <option value="php-symfony_http_client_contracts-970fd879c5a4-fcc795b7" />
+        <option value="php-symfony_http_foundation-970fd879c5a4-3cc58230" />
+        <option value="php-symfony_http_kernel-970fd879c5a4-382d1787" />
+        <option value="php-symfony_intl-970fd879c5a4-276adca8" />
+        <option value="php-symfony_mailer-970fd879c5a4-3fc99a3c" />
+        <option value="php-symfony_mime-970fd879c5a4-49bf688a" />
+        <option value="php-symfony_monolog_bridge-970fd879c5a4-35c98b57" />
+        <option value="php-symfony_monolog_bundle-970fd879c5a4-583e9e0e" />
+        <option value="php-symfony_options_resolver-970fd879c5a4-bf1fdfbf" />
+        <option value="php-symfony_process-970fd879c5a4-eb2dee07" />
+        <option value="php-symfony_property_access-970fd879c5a4-65ce992c" />
+        <option value="php-symfony_property_info-970fd879c5a4-aef9d395" />
+        <option value="php-symfony_routing-970fd879c5a4-f49f10e4" />
+        <option value="php-symfony_security_core-970fd879c5a4-e7cfdbeb" />
+        <option value="php-symfony_serializer-970fd879c5a4-c99a29ca" />
+        <option value="php-symfony_string-970fd879c5a4-46409843" />
+        <option value="php-symfony_translation-970fd879c5a4-44617a86" />
+        <option value="php-symfony_twig_bridge-970fd879c5a4-58b17791" />
+        <option value="php-symfony_twig_bundle-970fd879c5a4-90933cb7" />
+        <option value="php-symfony_validator-970fd879c5a4-fe7c156f" />
+        <option value="php-symfony_var_dumper-970fd879c5a4-1e515d35" />
+        <option value="php-symfony_yaml-970fd879c5a4-50d00152" />
+        <option value="php-twig_twig-970fd879c5a4-a6a627dd" />
       </set>
     </attachedChunks>
   </component>
@@ -246,6 +297,12 @@
       <workItem from="1730225525844" duration="11000" />
       <workItem from="1730225538774" duration="562000" />
       <workItem from="1730226103737" duration="10721000" />
+      <workItem from="1730273674583" duration="115000" />
+      <workItem from="1730273811493" duration="406000" />
+      <workItem from="1730274220772" duration="130000" />
+      <workItem from="1730274356376" duration="15000" />
+      <workItem from="1730274378740" duration="600000" />
+      <workItem from="1730274986178" duration="6557000" />
     </task>
     <task id="LOCAL-00001" summary="Feature : init back-office + command + User + Auth + login page">
       <option name="closed" value="true" />
@@ -276,5 +333,9 @@
     <MESSAGE value="Feature : init back-office + command + User + Auth + login page" />
     <MESSAGE value="Feature : create Entities" />
     <option name="LAST_COMMIT_MESSAGE" value="Feature : create Entities" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,0 +1,6 @@
+<picture>
+    {% if webp is defined %}
+        <source srcset="{{ webp }}" type="image/webp">
+    {% endif %}
+    <img src="{{ src ?? "" }}" alt="{{ alt ?? "" }}">
+</picture>

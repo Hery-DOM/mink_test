@@ -6,6 +6,14 @@
   height: max-content;
 }
 
+.admin-content{
+  min-height: 80vh;
+
+  img{
+    max-height: 200px;
+  }
+}
+
 .admin-table{
   border-collapse: collapse;
   width: 100%;

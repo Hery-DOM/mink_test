@@ -2619,8 +2619,6 @@ main {
   width: 100%;
   height: auto;
   vertical-align: middle;
-  opacity: 0;
-  transition: 1s ease opacity;
 }
 
 .kit-form input {
@@ -2657,6 +2655,13 @@ main {
 
 .admin-main {
   height: max-content;
+}
+
+.admin-content {
+  min-height: 80vh;
+}
+.admin-content img {
+  max-height: 200px;
 }
 
 .admin-table {

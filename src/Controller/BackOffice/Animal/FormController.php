@@ -9,7 +9,7 @@ use App\Services\SecureInputService;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
 
 #[Route("/admin/animal")]
@@ -32,8 +32,10 @@ class FormController extends AbstractController
             $backError = $this->redirectToRoute("admin_animal_create");
         }else{
             $h1 = "Mise à jour d'un animal";
-            $id = $secureInputService->secureInput($id);
-            $animal = $animalRepository->find($id);
+            /**
+             * @var Animal $animal
+             */
+            [$id,$animal] = $secureInputService->secureAndFind($id,$animalRepository);
             $backError = $this->redirectToRoute("admin_animal_update",[
                 "id" => $id
             ]);

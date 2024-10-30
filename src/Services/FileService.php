@@ -112,7 +112,7 @@ class FileService extends AbstractController
      **********************  PRIVATE FUNCTIONS   *********************
      ******************************************************************/
 
-    private function createDirectory(string $path): ?bool
+    public function createDirectory(string $path): ?bool
     {
         if(!file_exists($path)){
             try{

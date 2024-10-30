@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : Front-office read">
+    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/front-office/_animal-read.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/front-office/_animal-read.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/DeleteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/DeleteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/PicturesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/PicturesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Command/FixturesTypeAndBreedCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Command/FixturesTypeAndBreedCommand.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Services/FileService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/FileService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/back-office/animal/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/animal/list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/back-office/animal/pictures_list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/animal/pictures_list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/partials/_pagination.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_pagination.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -190,7 +185,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature__remove",
+    "git-widget-placeholder": "feature__modal__flash",
     "last_opened_file_path": "/Users/hery/Sites/localhost/projets-pro/mink_test/assets/owlcarousel",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -360,7 +355,8 @@
     <MESSAGE value="Feature : Pagination" />
     <MESSAGE value="Feature : Front-office read" />
     <MESSAGE value="re-init" />
-    <option name="LAST_COMMIT_MESSAGE" value="re-init" />
+    <MESSAGE value="Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

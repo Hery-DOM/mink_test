@@ -9,12 +9,10 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class ReadController extends AbstractController
 {
-    #[Route("/animal/{slug}", name: "animal_read")]
-    public function read($slug, SecureInputService $secureInputService, AnimalRepository $animalRepository)
+    #[Route("/animal/{id}/{slug}", name: "animal_read")]
+    public function read($id, SecureInputService $secureInputService, AnimalRepository $animalRepository)
     {
-        $slug = $secureInputService->secureInput($slug);
-
-        $animal = $animalRepository->findOneBy(['name' => $slug]);
+        [$id,$animal] = $secureInputService->secureAndFind($id,$animalRepository);
 
         if(!$animal){
             return $this->redirectToRoute("animal_list");

@@ -19,7 +19,7 @@
                 {% endif %}
             </div>
             <div class="meli-center-center">
-                <a href="{{ path("animal_read",{'slug':a.name|slug}) }}">
+                <a href="{{ path("animal_read",{'id':a.id,'slug':a.name|slug}) }}">
                     <button class="kit-btn">Détails</button>
                 </a>
             </div>

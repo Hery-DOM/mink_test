@@ -11,12 +11,12 @@
             </span>
             </div>
 
-            <div class="meli-center-center">
+            <div class="meli-center-center meli-flex-column">
                 {% for message in messageSuccess %}
-                    <p>{{ message }}</p>
+                    <p class="meli-margin-bottom-5">{{ message }}</p>
                 {% endfor %}
                 {% for message in messageError %}
-                    <p>{{ message }}</p>
+                    <p class="meli-margin-bottom-5">{{ message }}</p>
                 {% endfor %}
             </div>
         </div>

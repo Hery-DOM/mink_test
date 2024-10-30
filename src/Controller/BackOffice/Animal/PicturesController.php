@@ -17,6 +17,7 @@ use Symfony\Component\Security\Http\Attribute\IsGranted;
 #[IsGranted("ROLE_ADMIN")]
 class PicturesController extends AbstractController
 {
+
     #[Route("/{id}/pictures", name: "admin_animal_pictures_list")]
     public function index($id, AnimalRepository $animalRepository,SecureInputService $secureInputService)
     {

@@ -30,6 +30,7 @@
             {% endfor %}
 
         </div>
+
         <div class="admin-form meli-width-100 meli-margin-top-100">
             <form action="{{ path('admin_animal_pictures_add',{'id':animal.id}) }}" method="POST" enctype="multipart/form-data"
                   class="meli-width-50"
@@ -43,6 +44,9 @@
                 </div>
             </form>
         </div>
+
+
+
     </section>
 
 {% endblock %}

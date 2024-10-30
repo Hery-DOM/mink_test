@@ -16,6 +16,18 @@ class AnimalRepository extends ServiceEntityRepository
         parent::__construct($registry, Animal::class);
     }
 
+
+    public function findByPage(int $currentPage,int $maxResult)
+    {
+        return $this->createQueryBuilder("a")
+                    ->select("a")
+                    ->setFirstResult(($currentPage-1)*$maxResult)
+                    ->setMaxResults($maxResult)
+                    ->orderBy("a.id","DESC")
+                    ->getQuery()->getResult();
+    }
+
+
     //    /**
     //     * @return Animal[] Returns an array of Animal objects
     //     */

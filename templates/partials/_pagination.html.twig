@@ -1,0 +1,11 @@
+<div class="meli-around-center">
+    {% for p in 1..pagesTot %}
+        <p  class="meli-margin-10">
+                <a href="{{ path("admin_animal_list",{"p":p}) }}"
+                   class="{% if currentPage == p %} meli-txt-colorAction meli-txt-bold {% endif %}"
+                >
+                        {{ p }}
+                </a>
+        </p>
+    {% endfor %}
+</div>

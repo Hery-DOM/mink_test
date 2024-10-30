@@ -64,6 +64,13 @@
                 </tr>
             {% endfor %}
         </table>
+
+        <div class="meli-center-center meli-margin-top-100">
+            {% include "partials/_pagination.html.twig" with {
+                pagesTot: pagesTot,
+                currentPage: currentPage
+            } %}
+        </div>
     </section>
 
 {% endblock %}

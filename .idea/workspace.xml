@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : Pictures add">
-      <change afterPath="$PROJECT_DIR$/assets/scripts/_confirm.js" afterDir="false" />
+    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : Pictures remove">
+      <change afterPath="$PROJECT_DIR$/templates/partials/_pagination.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/ListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/ListController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/PicturesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/PicturesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Pictures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Pictures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/AnimalRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/AnimalRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/back-office/animal/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/animal/list.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/back-office/animal/pictures_list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/animal/pictures_list.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -185,20 +186,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature__admin__pictures&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/hery/Sites/localhost/projets-pro/mink_test/public&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Symfony2.SettingsForm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature__pagination",
+    "last_opened_file_path": "/Users/hery/Sites/localhost/projets-pro/mink_test/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "Symfony2.SettingsForm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />

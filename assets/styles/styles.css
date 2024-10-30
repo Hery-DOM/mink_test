@@ -2668,6 +2668,24 @@ main {
   background-color: #cfe6ed;
   margin: 10px;
 }
+@media screen and (max-width: 750px) {
+  .animal-list form span.select2 {
+    width: 100% !important;
+  }
+  .animal-list form .buttons-box {
+    flex-direction: row;
+  }
+  .animal-list form .buttons-box > div {
+    width: fit-content;
+  }
+  .animal-list .items-box .item {
+    width: 90%;
+    margin-inline: auto;
+  }
+  .animal-list .items-box .item a {
+    width: fit-content;
+  }
+}
 
 .animal-read .pictures-carousel {
   position: relative;
@@ -2699,8 +2717,19 @@ main {
   background-color: #cfe6ed;
 }
 
+@media screen and (max-width: 750px) {
+  header {
+    padding: 0 !important;
+  }
+}
 .admin-aside {
   min-height: 90vh;
+}
+@media screen and (max-width: 750px) {
+  .admin-aside {
+    min-height: 0;
+    padding-top: 20px;
+  }
 }
 
 .admin-main {
@@ -2758,6 +2787,16 @@ main {
 .admin-btn:hover {
   background-color: white;
   color: #f37619;
+}
+
+@media screen and (max-width: 750px) {
+  .pagination {
+    flex-direction: row;
+    width: fit-content;
+  }
+  .pagination p {
+    width: fit-content;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

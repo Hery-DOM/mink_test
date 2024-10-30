@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded",() => {
     (() => {
       const carousel = $(".owl-carousel");
 
-      if(!carousel) return null;
+      if(carousel.length === 0) return null;
 
       carousel.owlCarousel({
           loop: true,

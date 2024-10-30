@@ -1,6 +1,6 @@
 
 
-<div class="meli-around-center">
+<div class="pagination meli-around-center">
     {% for p in 1..pagesTot %}
         <p  class="meli-margin-10">
                 {% set params = routeParams is defined ? routeParams|merge({"p":p}) : {"p":p} %}

@@ -4,24 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : Front-office list">
-      <change afterPath="$PROJECT_DIR$/assets/owlcarousel/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/owlcarousel/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/owlcarousel/owl.theme.default.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scripts/front-office/_animal-read.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/front-office/_animal-read.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/FrontOffice/Animal/ReadController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Twig/Slug.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front-office/animals/read/index.html.twig" afterDir="false" />
+    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : Front-office read">
+      <change afterPath="$PROJECT_DIR$/assets/styles/partials/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/partials/_cta_contact.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scripts/front-office/_animal-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/front-office/_animal-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/front-office/_animal-read.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/front-office/_animal-read.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/front-office/_animal-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/front-office/_animal-list.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Animal.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Animal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front-office/animals/list/_result.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front-office/animals/list/_result.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front-office/animals/list/_filter.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front-office/animals/list/_filter.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front-office/animals/list/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front-office/animals/list/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front-office/animals/read/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front-office/animals/read/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partials/_pagination.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_pagination.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -345,7 +341,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730283606598</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Feature : Front-office read">
+      <option name="closed" value="true" />
+      <created>1730293835251</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730293835251</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +363,8 @@
     <MESSAGE value="Feature : create Entities" />
     <MESSAGE value="Feature : Pictures add" />
     <MESSAGE value="Feature : Pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature : Pagination" />
+    <MESSAGE value="Feature : Front-office read" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature : Front-office read" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

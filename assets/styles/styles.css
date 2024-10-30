@@ -2774,6 +2774,9 @@ main {
   margin-bottom: 0;
   margin-left: 10px;
 }
+.admin-form form .ck-editor__main .ck-content {
+  min-height: 300px;
+}
 
 .admin-btn {
   padding: 15px 30px;

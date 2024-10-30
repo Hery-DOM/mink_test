@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : Up form submit">
-      <change beforePath="$PROJECT_DIR$/public/uploads/animals/animal-6/blog-article-default-67223ca03424a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/animals/animal-6/blog-article-default-67223ca03424a.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/animals/animal-6/blog-article-default-67223d84bb0a6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/animals/animal-6/blog-article-default-67223d84bb0a6.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/animals/animal-6/cake-67223e091a38f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/animals/animal-6/islande-67223cfe73515.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/animals/animal-6/mini-blog-article-default-67223ca03424a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/animals/animal-6/mini-blog-article-default-67223d84bb0a6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/animals/animal-6/mini-cake-67223e091a38f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/animals/animal-6/mini-islande-67223cfe73515.jpeg" beforeDir="false" />
+    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : Up image treatment + modal flash">
+      <change afterPath="$PROJECT_DIR$/assets/scripts/_editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/importmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/importmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/back-office/animal/form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/animal/form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/back-office/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front-office/animals/read/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front-office/animals/read/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +192,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature__editor",
     "last_opened_file_path": "/Users/hery/Sites/localhost/projets-pro/mink_test/assets/owlcarousel",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -355,7 +355,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730299829213</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Feature : Up image treatment + modal flash">
+      <option name="closed" value="true" />
+      <created>1730303641491</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730303641491</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -373,7 +381,8 @@
     <MESSAGE value="re-init" />
     <MESSAGE value="Main" />
     <MESSAGE value="Feature : Up form submit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature : Up form submit" />
+    <MESSAGE value="Feature : Up image treatment + modal flash" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature : Up image treatment + modal flash" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

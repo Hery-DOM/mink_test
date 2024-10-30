@@ -35,6 +35,11 @@ class Pictures
         return $this->name;
     }
 
+    public function getNameWebp(): ?string
+    {
+        return explode(".",$this->name)[0].".webp";
+    }
+
     public function setName(string $name): static
     {
         $this->name = $name;

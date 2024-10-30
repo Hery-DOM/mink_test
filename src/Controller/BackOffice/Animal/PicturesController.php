@@ -5,6 +5,7 @@ namespace App\Controller\BackOffice\Animal;
 use App\Entity\Animal;
 use App\Entity\Pictures;
 use App\Repository\AnimalRepository;
+use App\Repository\PicturesRepository;
 use App\Services\FileService;
 use App\Services\SecureInputService;
 use Doctrine\ORM\EntityManagerInterface;
@@ -54,6 +55,34 @@ class PicturesController extends AbstractController
             "id" => $id
         ]);
 
+
+    }
+
+
+
+    #[Route("/{idPicture}/picture/remove", name: "admin_animal_pictures_remove")]
+    public function removePicture($idPicture,PicturesRepository $picturesRepository, FileService $fileService, SecureInputService $secureInputService, EntityManagerInterface $entityManager)
+    {
+        /**
+         * @var Pictures $picture
+         */
+        [$idPicture,$picture] = $secureInputService->secureAndFind($idPicture,$picturesRepository);
+        $id = $picture->getAnimal()->getId();
+
+        $dir = $this->getParameter("animal_media")."/animal-".$id;
+        $fileService->removeFile($dir."/".$picture->getName());
+        $fileService->removeFile($dir."/mini-".$picture->getName());
+        $fileService->removeFile($dir."/".$picture->getNameWebp());
+        $fileService->removeFile($dir."/mini-".$picture->getNameWebp());
+
+        $entityManager->remove($picture);
+        $entityManager->flush();
+
+        $this->addFlash("success","Image supprimée");
+
+        return $this->redirectToRoute("admin_animal_pictures_list",[
+            "id" => $id
+        ]);
 
     }
 

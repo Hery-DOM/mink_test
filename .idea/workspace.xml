@@ -4,28 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : CRUD animal">
-      <change afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/PicturesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back-office/animal/pictures_list.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/partials/_picture.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mink_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mink_test.iml" afterDir="false" />
+    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : Pictures add">
+      <change afterPath="$PROJECT_DIR$/assets/scripts/_confirm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/common/_meli.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/common/_meli.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/importmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/importmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/DeleteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/DeleteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/FormController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/FormController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/ListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/ListController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BackOffice/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackOffice/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/FileService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/FileService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/SecureInputService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/SecureInputService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/back-office/animal/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/animal/list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/back-office/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/PicturesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/PicturesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Pictures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Pictures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/back-office/animal/pictures_list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/animal/pictures_list.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -302,7 +287,7 @@
       <workItem from="1730274220772" duration="130000" />
       <workItem from="1730274356376" duration="15000" />
       <workItem from="1730274378740" duration="600000" />
-      <workItem from="1730274986178" duration="6557000" />
+      <workItem from="1730274986178" duration="7436000" />
     </task>
     <task id="LOCAL-00001" summary="Feature : init back-office + command + User + Auth + login page">
       <option name="closed" value="true" />
@@ -320,7 +305,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730224741261</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Feature : Pictures add">
+      <option name="closed" value="true" />
+      <created>1730281569152</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730281569152</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Feature : Pictures add">
+      <option name="closed" value="true" />
+      <created>1730281574491</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730281574491</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +333,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Feature : init back-office + command + User + Auth + login page" />
     <MESSAGE value="Feature : create Entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature : create Entities" />
+    <MESSAGE value="Feature : Pictures add" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature : Pictures add" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

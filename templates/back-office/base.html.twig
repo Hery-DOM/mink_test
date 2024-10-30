@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Back-office</title>
+    {% block javascripts %}
+        {% block importmap %}{{ importmap('app') }}{% endblock %}
+    {% endblock %}
+</head>
+<body>
+
+<header class="meli-padding-30 meli-bgc-colorSecondary"></header>
+
+<main class="admin-main meli-between-start meli-bgc-colorSecondary">
+    <aside class="admin-aside meli-padding-top-100 meli-width-10">
+        <nav>
+            <ul>
+                <li class="meli-padding-10 meli-margin-bottom-20">
+                    <a href="{{ path("admin_animal_list") }}"
+                       class="meli-txt-colorWhite"
+                    >Gérer les animaux</a>
+                </li>
+                <li class="meli-padding-10 meli-margin-bottom-20">
+                    <a href="{{ path("app_logout") }}"
+                       class="meli-txt-colorWhite"
+                    >Se déconnecter</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="admin-content meli-width-90  meli-padding-30 meli-bgc-colorWhite">
+
+        {% for message in app.flashes("success") %}
+            <div class="flash meli-padding-30">
+                <p>{{ message }}</p>
+            </div>
+        {% endfor %}
+
+        {% for message in app.flashes("error") %}
+            <div class="flash meli-padding-30">
+                <p>{{ message }}</p>
+            </div>
+        {% endfor %}
+        {% block content %}{% endblock %}
+    </div>
+
+</main>
+
+<footer class="meli-padding-30 meli-bgc-colorSecondary"></footer>
+
+</body>
+</html>

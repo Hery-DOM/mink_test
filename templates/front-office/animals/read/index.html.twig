@@ -1,0 +1,70 @@
+{% extends "base.html.twig" %}
+
+{% block styles %}
+    <link href="{{ asset("owlcarousel/owl.carousel.min.css") }}" rel="stylesheet" />
+    <link href="{{ asset("owlcarousel/owl.theme.default.min.css") }}" rel="stylesheet" />
+{% endblock %}
+
+{% block scripts %}
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="{{ asset("owlcarousel/owl.carousel.min.js") }}"></script>
+{% endblock %}
+
+{% block content %}
+    <section class="animal-read">
+        <div class="meli-margin-20">
+            <a href="{{ path("animal_list") }}"
+               class="meli-txt-colorAction"
+            >Retour à la recherche</a>
+        </div>
+
+        <h1 class="meli-txt-center meli-margin-bottom-50">{{ animal.name }}, {{ animal.age }}</h1>
+
+
+        <div class="meli-around-start">
+            <div class="text-box meli-width-50 meli-padding-30">
+                <p class="meli-margin-bottom-20">
+                    <span class="meli-txt-bold">{{ animal.statusLabel }}</span>
+                    {% if animal.status == "on_sale" %}
+                        : {{ animal.priceTTC }} €
+                    {% endif %}
+                </p>
+
+                <p class="meli-margin-bottom-20"><span class="meli-txt-bold">Type</span> : {{ animal.breed.type.name }}</p>
+                <p class="meli-margin-bottom-20"><span class="meli-txt-bold">Race</span> : {{ animal.breed.name }}</p>
+
+                <p>
+                    {{ animal.description|nl2br }}
+                </p>
+            </div>
+
+            <div class="pictures-carousel meli-width-50 meli-padding-30">
+                {% if animal.pictures is not empty %}
+                    <div class="owl-carousel meli-section-60">
+                        {% for p in animal.pictures %}
+                            {% include "partials/_picture.html.twig" with {
+                                src: asset("uploads/animals/animal-"~animal.id~"/"~p.name),
+                                webp: asset("uploads/animals/animal-"~animal.id~"/"~p.nameWebp),
+                                alt: p.alt,
+                            } %}
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <div class="noPictures"></div>
+                {% endif %}
+
+            </div>
+        </div>
+
+        <div class="meli-margin-top-50">
+            {% include "partials/_cta_contact.html.twig" %}
+        </div>
+
+
+
+
+
+
+
+    </section>
+{% endblock %}

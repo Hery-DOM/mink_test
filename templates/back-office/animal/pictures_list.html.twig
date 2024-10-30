@@ -1,0 +1,52 @@
+{% extends "back-office/base.html.twig" %}
+
+{% block content %}
+
+    <section>
+        <h1>Liste des images pour "{{ animal.name }}"</h1>
+
+        <div class="meli-margin-20">
+            <a href="{{ path('admin_animal_list') }}"
+                class="meli-txt-underline meli-txt-colorSecondary"
+            >Retour</a>
+        </div>
+
+        <div class="meli-start-start">
+            {% for p in animal.pictures %}
+                <div class="meli-margin-20">
+                    {% include "partials/_picture.html.twig" with {
+                        src: asset("uploads/animals/animal-"~animal.id~"/"~p.name),
+                        alt: p.alt
+                    } %}
+                    <form action="{{ path("admin_animal_pictures_remove",{"idPicture":p.id}) }}" method="POST"
+                          class="admin-form meli-center-center meli-margin-top-15  js-form-confirm">
+                        <button class=" admin-btn">Supprimer</button>
+                        <input type="hidden" name="_csrf_token"
+                               value="{{ csrf_token('delete') }}"
+                        >
+                    </form>
+                </div>
+
+            {% endfor %}
+
+        </div>
+
+        <div class="admin-form meli-width-100 meli-margin-top-100">
+            <form action="{{ path('admin_animal_pictures_add',{'id':animal.id}) }}" method="POST" enctype="multipart/form-data"
+                  class="meli-width-50"
+            >
+                <div>
+                    <label for="files">Ajouter des images</label>
+                    <input type="file" name="files[]" id="files" multiple>
+                </div>
+                <div>
+                    <button class="admin-btn">Enregistrer</button>
+                </div>
+            </form>
+        </div>
+
+
+
+    </section>
+
+{% endblock %}

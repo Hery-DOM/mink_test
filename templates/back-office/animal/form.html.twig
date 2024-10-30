@@ -1,0 +1,63 @@
+{% extends "back-office/base.html.twig" %}
+
+{% block content %}
+
+    <section>
+        <h1>{{ h1 }}</h1>
+
+        <div class="meli-margin-20">
+            <a href="{{ path("admin_animal_list") }}"
+                class="meli-txt-colorSecondary meli-txt-underline"
+            >
+                Retour
+            </a>
+        </div>
+
+        <div class="admin-form">
+            {{ form_start(form) }}
+
+            <div>
+                {{ form_label(form.name,"Nom") }}
+                {{ form_widget(form.name) }}
+            </div>
+            <div>
+                {{ form_label(form.birthdate,"Date de naissance") }}
+                {{ form_widget(form.birthdate) }}
+            </div>
+            <div>
+                {{ form_label(form.description,"Description") }}
+                {{ form_widget(form.description) }}
+            </div>
+            <div>
+                {{ form_label(form.status,"Statut") }}
+                {{ form_widget(form.status) }}
+            </div>
+            <div>
+                {{ form_label(form.price_ht,"Prix HT") }}
+                {{ form_widget(form.price_ht) }}
+            </div>
+            <div>
+                {{ form_label(form.tva,"TVA") }}
+                {{ form_widget(form.tva) }}
+            </div>
+
+            <div>
+                {{ form_label(form.breed,"Race") }}
+                {{ form_widget(form.breed) }}
+            </div>
+            <div class="row">
+                {{ form_widget(form.is_published) }}
+                {{ form_label(form.is_published,"Cocher pour publier") }}
+            </div>
+
+            <div class="meli-center-center">
+                <button class="admin-btn">Enregistrer</button>
+            </div>
+
+            {{ form_end(form) }}
+        </div>
+
+
+    </section>
+
+{% endblock %}

@@ -11,6 +11,11 @@ use Doctrine\ORM\Mapping as ORM;
 #[ORM\Entity(repositoryClass: AnimalRepository::class)]
 class Animal
 {
+    const STATUS = [
+        "on_sale" => "A vendre",
+        "sold" => "Vendu"
+    ];
+
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
@@ -37,8 +42,6 @@ class Animal
     #[ORM\Column(nullable: true)]
     private ?float $tva = null;
 
-    #[ORM\ManyToOne(inversedBy: 'animals')]
-    private ?Type $type = null;
 
     #[ORM\ManyToOne(inversedBy: 'animals')]
     private ?Breed $breed = null;
@@ -100,6 +103,11 @@ class Animal
         return $this->status;
     }
 
+    public function getStatusLabel(): ?string
+    {
+        return self::STATUS[$this->status];
+    }
+
     public function setStatus(?string $status): static
     {
         $this->status = $status;
@@ -107,12 +115,12 @@ class Animal
         return $this;
     }
 
-    public function isPublished(): ?bool
+    public function getIsPublished(): ?bool
     {
         return $this->is_published;
     }
 
-    public function setPublished(bool $is_published): static
+    public function setIsPublished(bool $is_published): static
     {
         $this->is_published = $is_published;
 
@@ -143,17 +151,6 @@ class Animal
         return $this;
     }
 
-    public function getType(): ?Type
-    {
-        return $this->type;
-    }
-
-    public function setType(?Type $type): static
-    {
-        $this->type = $type;
-
-        return $this;
-    }
 
     public function getBreed(): ?Breed
     {
@@ -195,5 +192,12 @@ class Animal
         }
 
         return $this;
+    }
+
+    public function getAge(): string
+    {
+        $age = $this->birthdate?->diff(new \DateTime());
+
+        return $age?->y >= 1 ? $age?->y." an".($age?->y > 1 ? "s" : "") : $age?->m." mois";
     }
 }

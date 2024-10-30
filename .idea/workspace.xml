@@ -4,8 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : init back-office + command + User + Auth + login page">
+    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : create Entities">
+      <change afterPath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Command/FixturesTypeAndBreedCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/DeleteController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/FormController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/ListController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/BackOffice/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/FileService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Services/SecureInputService.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/back-office/animal/form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/back-office/animal/list.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/back-office/base.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/back-office/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/common/_meli.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/common/_meli.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Animal.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Animal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Breed.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Breed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Type.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Type.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,19 +200,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature__entities",
-    "last_opened_file_path": "/Users/hery/Sites/localhost/projets-pro/mink_test/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature__crud__animals&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/hery/Sites/localhost/projets-pro/mink_test/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -221,6 +243,9 @@
       <updated>1730217701148</updated>
       <workItem from="1730217702174" duration="7011000" />
       <workItem from="1730224728669" duration="633000" />
+      <workItem from="1730225525844" duration="11000" />
+      <workItem from="1730225538774" duration="562000" />
+      <workItem from="1730226103737" duration="10721000" />
     </task>
     <task id="LOCAL-00001" summary="Feature : init back-office + command + User + Auth + login page">
       <option name="closed" value="true" />
@@ -249,6 +274,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Feature : init back-office + command + User + Auth + login page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature : init back-office + command + User + Auth + login page" />
+    <MESSAGE value="Feature : create Entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature : create Entities" />
   </component>
 </project>

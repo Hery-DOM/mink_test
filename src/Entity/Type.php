@@ -19,15 +19,16 @@ class Type
     private ?string $name = null;
 
     /**
-     * @var Collection<int, Animal>
+     * @var Collection<int, Breed>
      */
-    #[ORM\OneToMany(targetEntity: Animal::class, mappedBy: 'type')]
-    private Collection $animals;
+    #[ORM\OneToMany(targetEntity: Breed::class, mappedBy: 'type')]
+    private Collection $breeds;
 
     public function __construct()
     {
-        $this->animals = new ArrayCollection();
+        $this->breeds = new ArrayCollection();
     }
+
 
     public function getId(): ?int
     {
@@ -47,32 +48,34 @@ class Type
     }
 
     /**
-     * @return Collection<int, Animal>
+     * @return Collection<int, Breed>
      */
-    public function getAnimals(): Collection
+    public function getBreeds(): Collection
     {
-        return $this->animals;
+        return $this->breeds;
     }
 
-    public function addAnimal(Animal $animal): static
+    public function addBreed(Breed $breed): static
     {
-        if (!$this->animals->contains($animal)) {
-            $this->animals->add($animal);
-            $animal->setType($this);
+        if (!$this->breeds->contains($breed)) {
+            $this->breeds->add($breed);
+            $breed->setType($this);
         }
 
         return $this;
     }
 
-    public function removeAnimal(Animal $animal): static
+    public function removeBreed(Breed $breed): static
     {
-        if ($this->animals->removeElement($animal)) {
+        if ($this->breeds->removeElement($breed)) {
             // set the owning side to null (unless already changed)
-            if ($animal->getType() === $this) {
-                $animal->setType(null);
+            if ($breed->getType() === $this) {
+                $breed->setType(null);
             }
         }
 
         return $this;
     }
+
+
 }

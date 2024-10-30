@@ -553,6 +553,10 @@ main {
   background-color: #f37619;
 }
 
+.meli-bgc-colorWhite {
+  background-color: white;
+}
+
 /************************** 
             BORDER 
 **************************/
@@ -2643,6 +2647,60 @@ main {
   transition: 0.3s ease all;
 }
 .kit-form button[type=submit]:hover, .kit-form button:hover {
+  background-color: white;
+  color: #f37619;
+}
+
+.admin-aside {
+  min-height: 90vh;
+}
+
+.admin-main {
+  height: max-content;
+}
+
+.admin-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.admin-table th, .admin-table td {
+  border: 1px solid #45619b;
+  padding: 10px;
+  text-align: center;
+}
+
+.admin-form form > div {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-bottom: 20px;
+}
+.admin-form form > div label {
+  margin-bottom: 10px;
+}
+.admin-form form > div input, .admin-form form > div textarea, .admin-form form > div select {
+  padding: 5px;
+}
+.admin-form form > div.row {
+  flex-direction: row;
+  align-items: center;
+}
+.admin-form form > div.row label, .admin-form form > div.row input {
+  width: fit-content;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+.admin-btn {
+  padding: 15px 30px;
+  color: white;
+  background-color: #f37619;
+  border: 1px solid #f37619;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s ease all;
+}
+.admin-btn:hover {
   background-color: white;
   color: #f37619;
 }

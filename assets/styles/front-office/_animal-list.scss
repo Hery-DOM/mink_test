@@ -1,0 +1,43 @@
+.animal-list{
+  .items-box{
+    .item{
+      .img-box{
+        min-height: 300px;
+        background-color: $colorThird;
+        margin: 10px;
+      }
+    }
+  }
+
+
+  @media screen and(max-width: 750px){
+
+    form{
+
+      span.select2{
+        width: 100%!important;
+      }
+
+      .buttons-box{
+        flex-direction: row;
+        &>div{
+          width: fit-content;
+        }
+      }
+    }
+
+
+
+
+    .items-box{
+      .item{
+        width: 90%;
+        margin-inline: auto;
+
+        a{
+          width: fit-content;
+        }
+      }
+    }
+  }
+}

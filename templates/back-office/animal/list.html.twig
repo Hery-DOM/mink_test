@@ -1,0 +1,77 @@
+{% extends "back-office/base.html.twig" %}
+
+{% block content %}
+
+    <section>
+        <h1>Gestion des animaux</h1>
+
+        <div class="meli-margin-20">
+            <a href="{{ path("admin_animal_create") }}"
+                class="meli-txt-colorSecondary meli-txt-underline"
+            >
+                Ajouter un animal
+            </a>
+        </div>
+
+        <table class="admin-table">
+            <tr>
+                <th>Nom</th>
+                <th>Âge</th>
+                <th>Type - Race</th>
+                <th>Prix HT</th>
+                <th>Statut</th>
+                <th>Statut de publication</th>
+                <th>Actions</th>
+            </tr>
+            {% for a in animals %}
+                <tr>
+                    <td rowspan="3">{{ a.name }}</td>
+                    <td rowspan="3">{{ a.age }}</td>
+                    <td rowspan="3">{{ a.breed.type.name~" - "~a.breed.name }}</td>
+                    <td rowspan="3">{{ a.priceHt ? a.priceHT~" €" : "" }}</td>
+                    <td rowspan="3">{{ a.statusLabel }}</td>
+                    <td rowspan="3">{{ a.isPublished ? "Publié" : "Non publié" }}</td>
+                    <td>
+                        <div class="meli-center-center">
+                            <a href="{{ path('admin_animal_update',{'id':a.id}) }}"
+                                class="admin-btn"
+                            >
+                                Modifier
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="meli-center-center">
+                            <a href="{{ path('admin_animal_pictures_list',{'id':a.id}) }}"
+                               class="admin-btn"
+                            >
+                                Gérer les images
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="{{ path("admin_animal_delete",{"id":a.id}) }}" method="POST" class="admin-form meli-center-center js-form-confirm">
+                            <button class="admin-btn">Supprimer</button>
+                            <input type="hidden" name="_csrf_token"
+                                   value="{{ csrf_token('delete') }}"
+                            >
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        <div class="meli-center-center meli-margin-top-100">
+            {% include "partials/_pagination.html.twig" with {
+                pagesTot: pagesTot,
+                currentPage: currentPage,
+                route: "admin_animal_list"
+            } %}
+        </div>
+    </section>
+
+{% endblock %}

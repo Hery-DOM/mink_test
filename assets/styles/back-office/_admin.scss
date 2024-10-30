@@ -1,0 +1,84 @@
+@media screen and(max-width: 750px){
+  header{
+    padding:0!important;
+  }
+}
+
+.admin-aside{
+  min-height: 90vh;
+
+  @media screen and(max-width: 750px){
+    min-height: 0;
+    padding-top: 20px;
+  }
+}
+
+.admin-main{
+  height: max-content;
+}
+
+.admin-content{
+  min-height: 80vh;
+
+  img{
+    max-height: 200px;
+  }
+}
+
+.admin-table{
+  border-collapse: collapse;
+  width: 100%;
+  th,td{
+    border:1px solid $colorPrimary;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.admin-form{
+  form{
+    &>div{
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      margin-bottom: 20px;
+
+      label{
+        margin-bottom: 10px;
+      }
+
+      input,textarea,select{
+        padding: 5px;
+      }
+
+      &.row{
+        flex-direction: row;
+        align-items: center;
+        label,input{
+          width: fit-content;
+          margin-bottom: 0;
+          margin-left: 10px;
+        }
+      }
+
+    }
+  }
+
+}
+
+.admin-btn{
+
+  padding: 15px 30px;
+  color: white;
+  background-color: $colorAction;
+  border: 1px solid $colorAction;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s ease all;
+
+  &:hover{
+    background-color: white;
+    color: $colorAction;
+  }
+
+}

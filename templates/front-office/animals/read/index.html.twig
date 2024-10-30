@@ -33,9 +33,9 @@
                 <p class="meli-margin-bottom-20"><span class="meli-txt-bold">Type</span> : {{ animal.breed.type.name }}</p>
                 <p class="meli-margin-bottom-20"><span class="meli-txt-bold">Race</span> : {{ animal.breed.name }}</p>
 
-                <p>
-                    {{ animal.description|nl2br }}
-                </p>
+                <div>
+                    {{ animal.description|raw }}
+                </div>
             </div>
 
             <div class="pictures-carousel meli-width-50 meli-padding-30">

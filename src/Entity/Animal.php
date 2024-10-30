@@ -172,6 +172,11 @@ class Animal
         return $this->pictures;
     }
 
+    public function getFirstPicture()
+    {
+        return $this->pictures[0];
+    }
+
     public function addPicture(Pictures $picture): static
     {
         if (!$this->pictures->contains($picture)) {

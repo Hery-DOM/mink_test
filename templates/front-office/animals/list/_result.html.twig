@@ -1,0 +1,22 @@
+<div class="items-box meli-around-start">
+    {% for a in animals %}
+        <article class="item meli-margin-bottom-50 meli-width-20 meli-border-width2 meli-border-colorPrimary meli-padding-20 meli-border-radius10">
+            <h2 class="meli-txt-center">{{ a.name }}</h2>
+            <div class="img-box">
+                {% if a.pictures is not empty %}
+                    {% include "partials/_picture.html.twig" with {
+                        src: asset("uploads/animals/animal-"~a.id~"/mini-"~a.firstPicture.name),
+                        webp: asset("uploads/animals/animal-"~a.id~"/mini-"~a.firstPicture.nameWebp),
+                        alt: a.firstPicture.alt
+                    } %}
+                {% endif %}
+            </div>
+            <div class="meli-center-center">
+                <a href="">
+                    <button class="kit-btn">Détails</button>
+                </a>
+            </div>
+
+        </article>
+    {% endfor %}
+</div>

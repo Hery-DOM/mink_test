@@ -16,6 +16,70 @@ class AnimalRepository extends ServiceEntityRepository
         parent::__construct($registry, Animal::class);
     }
 
+    public function findPublishedByPage(array $params, int $maxResult)
+    {
+        $currentPage = isset($params["p"]) ? intval($params["p"]) : 1;
+        $sorting = $params["sorting"] ?? null;
+        $filters = $params["filters"] ?? null;
+
+        $q = $this->createQueryBuilder("a")
+                    ->select("a")
+                    ->leftJoin("a.breed","b")
+                    ->addSelect("b")
+                    ->leftJoin("b.type","t")
+                    ->addSelect("t")
+                    ->where("a.is_published = 1");
+
+       if(!empty($filters)){
+           if(!empty($filters["type"])){
+               $q->andWhere('t.id in (:idType)')
+                   ->setParameter('idType',$filters["type"]);
+           }
+
+           if(!empty($filters["breed"])){
+               $q->andWhere("b.id in (:idBreed)")
+                   ->setParameter("idBreed",$filters["breed"]);
+           }
+       }
+
+       if(($sorting === "ASC" || $sorting === "DESC")){
+           $q->orderBy("a.name", $sorting);
+       }
+
+
+        return $q->setFirstResult(($currentPage-1)*$maxResult)
+                ->setMaxResults($maxResult)
+                ->getQuery()->getResult();
+
+
+    }
+
+    public function findPublished(array $params)
+    {
+        $filters = $params["filters"] ?? null;
+
+        $q = $this->createQueryBuilder("a")
+            ->select("a")
+            ->leftJoin("a.breed","b")
+            ->addSelect("b")
+            ->leftJoin("b.type","t")
+            ->addSelect("t")
+            ->where("a.is_published = 1");
+
+        if(!empty($filters)){
+            if(!empty($filters["type"])){
+                $q->andWhere('t.id in (:idType)')
+                    ->setParameter('idType',$filters["type"]);
+            }
+
+            if(!empty($filters["breed"])){
+                $q->andWhere("b.id in (:idBreed)")
+                    ->setParameter("idBreed",$filters["breed"]);
+            }
+        }
+
+        return $q->getQuery()->getResult();
+    }
 
     public function findByPage(int $currentPage,int $maxResult)
     {

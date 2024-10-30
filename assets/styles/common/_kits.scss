@@ -30,3 +30,18 @@
     }
   }
 }
+
+.kit-btn{
+  padding: 15px 30px;
+  color: white;
+  background-color: $colorAction;
+  border: 1px solid $colorAction;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s ease all;
+
+  &:hover{
+    background-color: white;
+    color: $colorAction;
+  }
+}

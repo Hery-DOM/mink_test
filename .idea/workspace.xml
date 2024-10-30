@@ -5,13 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : Pictures remove">
-      <change afterPath="$PROJECT_DIR$/templates/partials/_pagination.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scripts/front-office/_animal-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles/front-office/_animal-list.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/FrontOffice/Animal/ListController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/FrontOffice/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front-office/animals/list/_filter.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front-office/animals/list/_result.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front-office/animals/list/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/ListController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/ListController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/PicturesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackOffice/Animal/PicturesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/_confirm.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/_confirm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/common/_kits.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/common/_kits.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Animal.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Animal.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/AnimalRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/AnimalRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/back-office/animal/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/animal/list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/back-office/animal/pictures_list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/animal/pictures_list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/partials/_pagination.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_pagination.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +201,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature__pagination",
+    "git-widget-placeholder": "feature__front-office",
     "last_opened_file_path": "/Users/hery/Sites/localhost/projets-pro/mink_test/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -203,6 +215,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/front-office/animals/list" />
+      <recent name="$PROJECT_DIR$/templates/front-office/animals" />
     </key>
   </component>
   <component name="RunManager">
@@ -322,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730281574491</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Feature : Pagination">
+      <option name="closed" value="true" />
+      <created>1730283606598</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730283606598</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +359,8 @@
     <MESSAGE value="Feature : init back-office + command + User + Auth + login page" />
     <MESSAGE value="Feature : create Entities" />
     <MESSAGE value="Feature : Pictures add" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature : Pictures add" />
+    <MESSAGE value="Feature : Pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature : Pagination" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

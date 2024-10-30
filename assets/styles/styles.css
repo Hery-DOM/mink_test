@@ -2649,6 +2649,26 @@ main {
   color: #f37619;
 }
 
+.kit-btn {
+  padding: 15px 30px;
+  color: white;
+  background-color: #f37619;
+  border: 1px solid #f37619;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s ease all;
+}
+.kit-btn:hover {
+  background-color: white;
+  color: #f37619;
+}
+
+.animal-list .items-box .item .img-box {
+  min-height: 300px;
+  background-color: #cfe6ed;
+  margin: 10px;
+}
+
 .admin-aside {
   min-height: 90vh;
 }

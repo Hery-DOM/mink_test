@@ -24,6 +24,11 @@ a {
 main {
   min-height: 90vh;
 }
+@media screen and (max-width: 750px) {
+  main {
+    min-height: fit-content;
+  }
+}
 
 /************************** 
           FLEXBOX 
@@ -2663,9 +2668,11 @@ main {
   color: #f37619;
 }
 
+.animal-list .items-box .item {
+  min-width: 250px;
+}
 .animal-list .items-box .item .img-box {
-  min-height: 300px;
-  background-color: #cfe6ed;
+  min-height: 150px;
   margin: 10px;
 }
 @media screen and (max-width: 750px) {
@@ -2690,24 +2697,21 @@ main {
 .animal-read .pictures-carousel {
   position: relative;
 }
+.animal-read .pictures-carousel .owl-stage {
+  display: flex;
+  align-items: center;
+}
+.animal-read .pictures-carousel .owl-stage-outer {
+  border: 1px solid white;
+}
 .animal-read .pictures-carousel .owl-nav {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  bottom: 0;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   width: 100%;
-}
-.animal-read .pictures-carousel .owl-nav button {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #cfe6ed;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .animal-read .pictures-carousel .owl-nav button span {
   font-size: 50px;
@@ -2719,7 +2723,16 @@ main {
 
 @media screen and (max-width: 750px) {
   header {
-    padding: 0 !important;
+    display: flex;
+    justify-content: flex-end;
+  }
+  header .burger {
+    width: 50px;
+  }
+  header .burger div {
+    height: 3px;
+    background-color: white;
+    margin-bottom: 10px;
   }
 }
 .admin-aside {
@@ -2728,7 +2741,13 @@ main {
 @media screen and (max-width: 750px) {
   .admin-aside {
     min-height: 0;
-    padding-top: 20px;
+    max-height: 0;
+    padding-top: 0;
+    transition: 0.3s ease max-height;
+    overflow: hidden;
+  }
+  .admin-aside.open-mobile {
+    max-height: 300px;
   }
 }
 
@@ -2738,6 +2757,7 @@ main {
 
 .admin-content {
   min-height: 80vh;
+  overflow-x: scroll;
 }
 .admin-content img {
   max-height: 200px;
@@ -2751,6 +2771,13 @@ main {
   border: 1px solid #45619b;
   padding: 10px;
   text-align: center;
+}
+.admin-table button {
+  width: 150px;
+}
+.admin-table a {
+  display: inline-block;
+  width: 150px;
 }
 
 .admin-form form > div {

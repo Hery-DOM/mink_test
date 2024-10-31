@@ -6,15 +6,13 @@
 
     <section class="meli-center-center">
         <form method="post" class="kit-form meli-width-30 meli-bgc-colorPrimary meli-padding-30 meli-border-radius10">
-            {% if error %}
-                <p class="meli-txt-colorWhite meli-txt-italic">Erreur : veuillez recommencer</p>
-            {% endif %}
+
 
 
             <h1 class="meli-txt-center meli-margin-bottom-20 meli-txt-colorWhite">Se connecter</h1>
 
             {% if error %}
-                <p class="meli-txt-colorWhite meli-txt-italic meli-margin-bottom-20">{{ error.messageKey|trans(error.messageData, 'security') }}</p>
+                <p class="meli-txt-colorWhite meli-txt-italic meli-margin-bottom-20">Erreur : veuillez recommencer</p>
             {% endif %}
 
             <div class="meli-margin-bottom-30">

@@ -1,0 +1,19 @@
+<div class="text-box meli-width-50 meli-padding-30">
+
+    <div class="meli-section-80">
+        <p class="meli-margin-bottom-20">
+            <span class="meli-txt-bold">{{ animal.statusLabel }}</span>
+            {% if animal.status == "on_sale" %}
+                : {{ animal.priceTTC }} €
+            {% endif %}
+        </p>
+
+        <p class="meli-margin-bottom-20"><span class="meli-txt-bold">Type</span> : {{ animal.breed.type.name }}</p>
+        <p class="meli-margin-bottom-20"><span class="meli-txt-bold">Race</span> : {{ animal.breed.name }}</p>
+
+        <div>
+            {{ animal.description|raw }}
+        </div>
+    </div>
+
+</div>

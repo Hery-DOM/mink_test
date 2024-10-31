@@ -4,14 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : Editor">
+    <list default="true" id="a4307995-aade-4af6-a58a-ae8f147aff17" name="Changes" comment="Feature : modal flash + url">
+      <change afterPath="$PROJECT_DIR$/assets/scripts/_burger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front-office/animals/list/_intro.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front-office/animals/read/_carousel.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/front-office/animals/read/_text.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/partials/_modal_flash.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/partials/_modal_flash.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scripts/_form.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scripts/_form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/back-office/_admin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/common/_init.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/common/_init.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/front-office/_animal-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/front-office/_animal-list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/front-office/_animal-read.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/front-office/_animal-read.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/styles/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FrontOffice/Animal/ReadController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FrontOffice/Animal/ReadController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/back-office/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/back-office/home.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/back-office/home.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front-office/animals/list/_filter.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front-office/animals/list/_filter.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/front-office/animals/list/_result.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front-office/animals/list/_result.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/partials/_modal_flash.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/partials/_modal_flash.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front-office/animals/list/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front-office/animals/list/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/front-office/animals/read/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front-office/animals/read/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,20 +200,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature__last__corrections",
-    "last_opened_file_path": "/Users/hery/Sites/localhost/projets-pro/mink_test/assets/owlcarousel",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Symfony2.SettingsForm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature__ui&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/hery/Sites/localhost/projets-pro/mink_test/assets/owlcarousel&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Symfony2.SettingsForm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/assets/owlcarousel" />
@@ -296,6 +310,9 @@
       <workItem from="1730274986178" duration="7436000" />
       <workItem from="1730301013112" duration="718000" />
       <workItem from="1730309307922" duration="879000" />
+      <workItem from="1730326332008" duration="667000" />
+      <workItem from="1730327032719" duration="169000" />
+      <workItem from="1730362490217" duration="1301000" />
     </task>
     <task id="LOCAL-00001" summary="Feature : init back-office + command + User + Auth + login page">
       <option name="closed" value="true" />

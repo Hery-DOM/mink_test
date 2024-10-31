@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded",() => {
                 const btns = f.querySelectorAll("button")
                 btns.forEach((btn) => {
                    btn.disabled = true;
+                   btn.innerText = "Traitement en cours..."
                 });
             })
         })

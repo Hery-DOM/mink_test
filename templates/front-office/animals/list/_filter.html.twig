@@ -1,8 +1,8 @@
-<div class="meli-padding-30" >
+<section class="meli-padding-30" >
     <p class="meli-txt-bold meli-txt-size18">Filtres de recherche</p>
     <form action="#" method="GET">
-        <div class="">
-            <div class="meli-start-start  meli-flex-column meli-margin-20 meli-width-100">
+        <div class="meli-start-center">
+            <div class="meli-start-start  meli-flex-column meli-margin-20 meli-width-20">
                 <label for="type" class="meli-margin-bottom-10">Type</label>
                 <select name="filters[type][]" id="type" class="js-select-M meli-width-100 selectType" multiple>
                     {% for t in filters["type"] %}
@@ -17,7 +17,7 @@
                     {% endfor %}
                 </select>
             </div>
-            <div class="meli-start-start  meli-flex-column meli-margin-20 meli-width-100">
+            <div class="meli-start-start  meli-flex-column meli-margin-20 meli-width-20">
                 <label for="breed" class="meli-margin-bottom-10">Race</label>
                 <select name="filters[breed][]" id="breed" class="js-select-M meli-width-100 selectBreed" multiple>
                     {% for b in filters["breed"] %}
@@ -32,7 +32,7 @@
                     {% endfor %}
                 </select>
             </div>
-            <div class="meli-start-start  meli-flex-column meli-margin-20 meli-width-100">
+            <div class="meli-start-start  meli-flex-column meli-margin-20 meli-width-20">
                 <label for="sorting" class="meli-margin-bottom-10">Trier par</label>
                 <select name="sorting" id="sorting" class="meli-width-100 meli-padding-10 meli-border-radius5">
                     <option value="ASC"
@@ -83,10 +83,10 @@
                 </label>
             </div>
             <div class="buttons-box meli-start-center">
-                <div class="meli-margin-20 meli-padding-top-15">
+                <div class="meli-margin-right-10 meli-padding-top-15">
                     <button class="kit-btn">Filtrer</button>
                 </div>
-                <div class="meli-margin-20 meli-padding-top-15">
+                <div class="meli-margin-right-10 meli-padding-top-15">
                     <a href="{{ path("animal_list") }}">
                         <button type="button" class="kit-btn">Réinitialier</button>
                     </a>
@@ -96,4 +96,4 @@
         </div>
 
     </form>
-</div>
+</section>

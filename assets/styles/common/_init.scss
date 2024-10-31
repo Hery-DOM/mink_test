@@ -25,4 +25,7 @@ a{
 
 main{
   min-height: 90vh;
+  @media screen and(max-width: 750px){
+    min-height: fit-content;
+  }
 }

@@ -13,23 +13,26 @@
     <section class="animal-list">
         <h1 class="meli-txt-center meli-margin-bottom-50">Liste des animaux à la vente</h1>
 
+
+        {% include "front-office/animals/list/_intro.html.twig" %}
+
         {% include "front-office/animals/list/_filter.html.twig" %}
 
         {% include "front-office/animals/list/_result.html.twig" %}
 
 
-        <div class="meli-center-center">
+        <section class="meli-center-center">
             {% include "partials/_pagination.html.twig" with {
                 pagesTot: pagesTot,
                 currrentPage: currentPage,
                 route: "animal_list",
             } %}
-        </div>
+        </section>
 
 
 
-        <div class="meli-margin-top-30">
+        <section class="meli-margin-top-30">
             {% include "partials/_cta_contact.html.twig" %}
-        </div>
+        </section>
     </section>
 {% endblock %}

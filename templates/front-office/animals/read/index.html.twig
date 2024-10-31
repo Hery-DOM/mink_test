@@ -18,40 +18,13 @@
             >Retour à la recherche</a>
         </div>
 
-        <h1 class="meli-txt-center meli-margin-bottom-50">{{ animal.name }}, {{ animal.age }}</h1>
+        <h1 class="meli-txt-center meli-margin-bottom-50">{{ animal.name }} <br> {{ animal.age }}</h1>
 
 
         <div class="meli-around-start">
-            <div class="text-box meli-width-50 meli-padding-30">
-                <p class="meli-margin-bottom-20">
-                    <span class="meli-txt-bold">{{ animal.statusLabel }}</span>
-                    {% if animal.status == "on_sale" %}
-                        : {{ animal.priceTTC }} €
-                    {% endif %}
-                </p>
+            {% include "front-office/animals/read/_text.html.twig" %}
 
-                <p class="meli-margin-bottom-20"><span class="meli-txt-bold">Type</span> : {{ animal.breed.type.name }}</p>
-                <p class="meli-margin-bottom-20"><span class="meli-txt-bold">Race</span> : {{ animal.breed.name }}</p>
-
-                <div>
-                    {{ animal.description|raw }}
-                </div>
-            </div>
-
-            <div class="pictures-carousel meli-width-50 meli-padding-30">
-                {% if animal.pictures is not empty %}
-                    <div class="owl-carousel meli-section-60">
-                        {% for p in animal.pictures %}
-                            {% include "partials/_picture.html.twig" with {
-                                src: asset("uploads/animals/animal-"~animal.id~"/"~p.name),
-                                webp: asset("uploads/animals/animal-"~animal.id~"/"~p.nameWebp),
-                                alt: p.alt,
-                            } %}
-                        {% endfor %}
-                    </div>
-                {% else %}
-                    <div class="noPictures"></div>
-                {% endif %}
+            {% include "front-office/animals/read/_carousel.html.twig" %}
 
             </div>
         </div>

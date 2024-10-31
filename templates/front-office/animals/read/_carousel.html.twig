@@ -1,0 +1,14 @@
+<div class="pictures-carousel meli-width-50 meli-padding-30">
+    {% if animal.pictures is not empty %}
+    <div class="owl-carousel meli-section-60">
+        {% for p in animal.pictures %}
+            {% include "partials/_picture.html.twig" with {
+                src: asset("uploads/animals/animal-"~animal.id~"/"~p.name),
+                webp: asset("uploads/animals/animal-"~animal.id~"/"~p.nameWebp),
+                alt: p.alt,
+            } %}
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="noPictures"></div>
+{% endif %}

@@ -1,9 +1,9 @@
 .animal-list{
   .items-box{
     .item{
+      min-width: 250px;
       .img-box{
-        min-height: 300px;
-        background-color: $colorThird;
+        min-height: 150px;
         margin: 10px;
       }
     }

@@ -2762,6 +2762,11 @@ main {
 .admin-content img {
   max-height: 200px;
 }
+@media screen and (max-width: 750px) {
+  .admin-content img {
+    max-height: max-content;
+  }
+}
 
 .admin-table {
   border-collapse: collapse;
@@ -2803,6 +2808,18 @@ main {
 }
 .admin-form form .ck-editor__main .ck-content {
   min-height: 300px;
+}
+.admin-form form .dragdrop {
+  border: 1px solid #45619b;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+}
+.admin-form form .dragdrop input[type=file] {
+  display: none;
+}
+.admin-form form .drag-btn {
+  width: 100%;
 }
 
 .admin-btn {

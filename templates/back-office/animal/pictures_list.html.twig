@@ -11,9 +11,9 @@
             >Retour</a>
         </div>
 
-        <div class="meli-start-start">
+        <div class="meli-around-start">
             {% for p in animal.pictures %}
-                <div class="meli-margin-20">
+                <div class="meli-margin-bottom-20 meli-border-width1 meli-padding-5 meli-border-radius5">
                     {% include "partials/_picture.html.twig" with {
                         src: asset("uploads/animals/animal-"~animal.id~"/"~p.name),
                         alt: p.alt
@@ -34,12 +34,16 @@
         <div class="admin-form meli-width-100 meli-margin-top-100">
             <form action="{{ path('admin_animal_pictures_add',{'id':animal.id}) }}" method="POST" enctype="multipart/form-data"
                   class="meli-width-50"
+                  id="js-pictures-add-form"
             >
-                <div>
-                    <label for="files">Ajouter des images (JPEG, PNG, 3 Mo)</label>
+                <div id="file-label" class="dragdrop">
+                    <label for="files">Sélectionnez ou glissez-déposez des images (JPEG, PNG, 3 Mo)</label>
+                    <div id="js-pictures-drop-box" class="meli-around-start">
+
+                    </div>
                     <input type="file" name="files[]" id="files" multiple>
                 </div>
-                <div>
+                <div class="meli-end-start drag-btn">
                     <button class="admin-btn">Enregistrer</button>
                 </div>
             </form>
